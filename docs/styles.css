@@ -302,15 +302,15 @@ img {
 }
 
 .section.evidence {
-  background: #0f1714;
-  color: var(--sand);
+  background: #0f1714 !important;
+  color: var(--sand) !important;
 }
 
 .evidence .section-title h2,
 .evidence .section-title p,
 .evidence h3,
 .evidence p {
-  color: var(--sand);
+  color: var(--sand) !important;
 }
 
 .evidence .eyebrow {
