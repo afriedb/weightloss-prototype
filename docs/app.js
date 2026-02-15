@@ -11,7 +11,7 @@ const canvas = document.getElementById('weightCanvas');
 const slider = document.getElementById('weightSlider');
 const ctx = canvas?.getContext('2d');
 const image = new Image();
-image.src = 'assets/weightloss-slider.jpg';
+image.src = new URL('assets/weightloss-slider.jpg', window.location.href).toString();
 
 const drawImage = (value = 0) => {
   if (!ctx || !canvas || !image.complete) return;
@@ -54,7 +54,20 @@ const drawImage = (value = 0) => {
   }
 };
 
-image.onload = () => drawImage(Number(slider?.value || 0));
+image.onload = () => {
+  if (canvas) {
+    canvas.width = image.naturalWidth || canvas.width;
+    canvas.height = image.naturalHeight || canvas.height;
+  }
+  drawImage(Number(slider?.value || 0));
+};
+image.onerror = () => {
+  if (!ctx || !canvas) return;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = '#f4efe7';
+  ctx.font = '16px Sora, system-ui, sans-serif';
+  ctx.fillText('Preview image failed to load.', 20, 40);
+};
 slider?.addEventListener('input', (event) => {
   const value = Number(event.target.value);
   drawImage(value);
