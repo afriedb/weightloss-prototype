@@ -77,6 +77,28 @@
     </div>
   </header>
 
+  <section class="section slider-section">
+    <div class="section-title">
+      <p class="eyebrow">Body Composition Preview</p>
+      <h2>Visualize weight-change trajectories.</h2>
+      <p>
+        Move the slider to simulate leaner or fuller silhouettes. This is a
+        visual preview only and not a diagnostic tool.
+      </p>
+    </div>
+    <div class="slider-card">
+      <div class="slider-frame">
+        <canvas id="weightCanvas" width="720" height="960" aria-label="Weight change preview"></canvas>
+      </div>
+      <div class="slider-controls">
+        <span>Leaner</span>
+        <input id="weightSlider" type="range" min="-60" max="60" value="0" />
+        <span>Fuller</span>
+      </div>
+      <p class="slider-note">Interactive preview uses image scaling for illustration only.</p>
+    </div>
+  </section>
+
   <section id="science" class="section science">
     <div class="section-title">
       <p class="eyebrow">Why It Matters</p>
@@ -173,28 +195,6 @@
         <a href="https://www.cdc.gov/healthy-weight-growth/food-activity/overweight-obesity-impacts-health.html" target="_blank" rel="noreferrer">CDC health impacts</a>
         <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank" rel="noreferrer">WHO fact sheet</a>
       </article>
-    </div>
-  </section>
-
-  <section class="section slider-section">
-    <div class="section-title">
-      <p class="eyebrow">Body Composition Preview</p>
-      <h2>Visualize weight-change trajectories.</h2>
-      <p>
-        Move the slider to simulate leaner or fuller silhouettes. This is a
-        visual preview only and not a diagnostic tool.
-      </p>
-    </div>
-    <div class="slider-card">
-      <div class="slider-frame">
-        <canvas id="weightCanvas" width="720" height="960" aria-label="Weight change preview"></canvas>
-      </div>
-      <div class="slider-controls">
-        <span>Leaner</span>
-        <input id="weightSlider" type="range" min="-30" max="30" value="0" />
-        <span>Fuller</span>
-      </div>
-      <p class="slider-note">Interactive preview uses image scaling for illustration only.</p>
     </div>
   </section>
 

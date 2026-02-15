@@ -17,7 +17,7 @@ const drawImage = (value = 0) => {
   if (!ctx || !canvas || !image.complete) return;
   const baseWidth = canvas.width;
   const baseHeight = canvas.height;
-  const maxFactor = 0.35;
+  const maxFactor = 0.7;
   const intensity = (value / 100) * maxFactor;
 
   ctx.clearRect(0, 0, baseWidth, baseHeight);
