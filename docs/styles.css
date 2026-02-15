@@ -353,6 +353,7 @@ img {
   padding: 28px;
   border: 1px solid rgba(244, 239, 231, 0.15);
   box-shadow: var(--shadow);
+  max-width: 540px;
 }
 
 .slider-frame {
@@ -365,7 +366,7 @@ img {
 }
 
 .slider-frame canvas {
-  width: min(90vw, 420px);
+  width: min(78vw, 320px);
   height: auto;
   border-radius: 16px;
   background: #0b1212;
