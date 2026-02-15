@@ -301,7 +301,7 @@ img {
   color: var(--sun);
 }
 
-.evidence {
+.section.evidence {
   background: #0f1714;
   color: var(--sand);
 }
