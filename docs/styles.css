@@ -306,6 +306,17 @@ img {
   color: var(--sand);
 }
 
+.evidence .section-title h2,
+.evidence .section-title p,
+.evidence h3,
+.evidence p {
+  color: var(--sand);
+}
+
+.evidence .eyebrow {
+  color: var(--sun);
+}
+
 .evidence-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
