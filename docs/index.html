@@ -176,6 +176,28 @@
     </div>
   </section>
 
+  <section class="section slider-section">
+    <div class="section-title">
+      <p class="eyebrow">Body Composition Preview</p>
+      <h2>Visualize weight-change trajectories.</h2>
+      <p>
+        Move the slider to simulate leaner or fuller silhouettes. This is a
+        visual preview only and not a diagnostic tool.
+      </p>
+    </div>
+    <div class="slider-card">
+      <div class="slider-frame">
+        <canvas id="weightCanvas" width="720" height="960" aria-label="Weight change preview"></canvas>
+      </div>
+      <div class="slider-controls">
+        <span>Leaner</span>
+        <input id="weightSlider" type="range" min="-30" max="30" value="0" />
+        <span>Fuller</span>
+      </div>
+      <p class="slider-note">Interactive preview uses image scaling for illustration only.</p>
+    </div>
+  </section>
+
   <section id="stories" class="section stories">
     <div class="section-title">
       <p class="eyebrow">Real Momentum</p>
